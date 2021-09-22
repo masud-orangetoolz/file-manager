@@ -1,0 +1,22 @@
+.image-meta-data-table {
+    border-collapse: collapse;
+}
+.image-meta-data-table tr th {
+    text-align: left;
+    margin-top: 1rem;
+    padding-bottom: 0.25rem;
+    padding-top: 1rem;
+}
+.image-meta-data-table tr td {
+    font-size: 0.8rem;
+    padding: 0.125rem 0.125rem;
+}
+.image-meta-data-table tr td:nth-child(1) {
+    text-align: left;
+    min-width: 180px;
+}
+.image-meta-data-table tr td:nth-child(2) {
+    text-align: left;
+    min-width: 160px;
+    width: 100%;
+}

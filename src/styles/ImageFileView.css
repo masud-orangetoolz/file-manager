@@ -1,0 +1,23 @@
+.folder_image_view {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.image_file_view.active {
+    background-color: gray;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.image_file_view {
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+}
+
+.folder_image_view img {
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+}

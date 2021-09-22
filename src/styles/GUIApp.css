@@ -1,0 +1,40 @@
+.gui-app h1{
+    text-align: center;
+}
+
+.gui-image-upload-form { 
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.gui-uploaded-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.gui-uploaded-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.gui-image, 
+.gui-meta-data-container{
+    flex: 1;
+    margin: 1rem;
+}
+.gui-image img {
+    height: 360px;
+    width: 360px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-controller-btn {
+    text-align: center;
+}
+.image-controller-btn button {
+    margin: 0.5rem;
+}

@@ -1,0 +1,27 @@
+ /* folder_image_view */ 
+ .add_image_btn {
+    height: 50px;
+    width: 50px;
+    color: gray;
+    background-color: lightgray;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 4px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.add_image_form:hover .add_image_icon {
+    transform: scale(1.2);
+}
+.add_image_icon {
+    font-size: 2rem !important;
+}
+.add_image_btn span {
+    font-size: 10px;
+    text-align: center;
+}

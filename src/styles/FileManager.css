@@ -1,0 +1,37 @@
+.file_manager__container {
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: lightcyan;
+}
+.folders {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+.folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+}
+.folder:hover .folder_icon {
+    color: #444;
+    transform: scale(1.1);
+}
+.folder span {
+    max-width: 56px;
+    font-size: 12px;
+    text-align: center;
+}
+.folder_icon {
+    font-size: 4rem !important;
+    color: #2c3e50;
+}
+
