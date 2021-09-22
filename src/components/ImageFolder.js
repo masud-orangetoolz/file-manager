@@ -1,16 +1,38 @@
-import { Folder } from "@material-ui/icons";
+import { Folder, Image } from "@material-ui/icons";
 
-function ImageFolder({folder, showImageUnderFolder}) {
-    return ( 
-        <div className="folder" onClick={() => showImageUnderFolder(folder.id)}>
+function ImageFolder({folder}) {
+  if(folder.type === "directory") {
+    return (
+      <div className="folder">
             <Folder className="folder_icon" />
             <span>
-              {folder.folderName.length > 10
-                ? `${folder.folderName.substring(0, 10)}...`
-                : `${folder.folderName}`}{' '}
+              {folder.name.length > 10
+                ? `${folder.name.substring(0, 10)}...`
+                : `${folder.name}`}{' '}
             </span>
-          </div>
-     );
+      </div>
+    )
+  } else {
+    return (
+      <div className="folder">
+        <Image className="folder_icon" />
+            <span>
+              {folder.name.length > 10
+                ? `${folder.name.substring(0, 10)}...`
+                : `${folder.name}`}{' '}
+            </span>
+      </div>
+    )
+  }
 }
 
 export default ImageFolder;
+
+{/* <div className="folder">
+<Folder className="folder_icon" />
+<span>
+  {folder.name.length > 10
+    ? `${folder.name.substring(0, 10)}...`
+    : `${folder.name}`}{' '}
+</span>
+</div> */}
